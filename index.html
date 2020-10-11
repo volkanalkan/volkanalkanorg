@@ -3,306 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="This is my personal website, Volkan Alkan">  
-  <meta name="keywords" content="volkan, alkan, volkan alkan, piano, piyano, music, web, developer, web developer">  
-  <meta name="author" content="Volkan Alkan">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volkan Alkan</title>
+  <link rel="stylesheet" href="stye.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="main.css">
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-ML5D45B');</script>
-  <!-- End Google Tag Manager -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap" rel="stylesheet">
-  <link href="//db.onlinewebfonts.com/c/0923ee644c97a87d70269aa80a6f1e79?family=The+Historia+Demo" rel="stylesheet" type="text/css"/>
-  <script src="https://kit.fontawesome.com/039ba9c1d5.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
+  <!-- preloader -->
+  <div class="loader_bg">
+    <div class="loader"></div>
+  </div>
 
-  <!-- Preloader -->
-    <div class="loader_bg">
-      <div class="loader"></div>
-    </div>
-  <!-- End Preloader -->
-
-  <!-- Header Section -->
-
-      <header>
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Teams</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
         <div class="menu-toggler">
           <div class="bar half start"></div>
           <div class="bar"></div>
           <div class="bar half end"></div>
         </div>
-        <nav class="top-nav">
-          <ul class="nav-list">
-            <li>
-              <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li>
-              <a href="#about" class="nav-link">About</a>
-            </li>
-            <li>
-              <a href="#services" class="nav-link">Services</a>
-            </li>
-            <li>
-              <a href="#portfolio" class="nav-link">Portfolio</a>
-            </li>
-            <li>
-              <a href="#experience" class="nav-link">Experience</a>
-            </li>
-            <li>
-              <a href="#contact" class="nav-link">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="landing-text">
-          <h1>Volkan Alkan</h1>
-          
-          <h6>Computer Engineer | Web Developer | Musician</h6>
+        <div class="top-nav"></div>
+    </div>
+  </nav>
 
-          <a href="./volkanalkancv (english).pdf" download="">Download CV</a>
+  <!-- home section start -->
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="text-1">Hello, my name is</div>
+        <div class="text-2">Volkan Alkan</div>
+        <div class="text-3">And I'm a <span>Musician</span></div>
+        <a href="#">Hİre me</a>
+      </div>
+    </div>
+  </section>
 
+  <!-- about section start -->
+  <section class="about" id="about">
+    <div class="max-width">
+      <h2 class="title">About me</h2>
+      <div class="about-content">
+        <div class="column left">
+          <img src="images/Volkan Alkan.PNG" alt="" data-aos="fade-right">
         </div>
-        <div class="language">
-          <ul>
-            <li>
-              <a href="./turkce.html" class="language-a">tr</a>
-            </li>
-            <li>
-              <a href="./index.html" class="language-a">eng</a>
-            </li>
-          </ul>
+        <div class="column right" data-aos="fade-left" data-aos-delay="150">
+          <div class="text">I'm Volkan and I'm a <span>musician</span> </div>
+          <p>Hello there! I am a computer engineering student & Web developer. At the same time, music has always been my comrade, especially piano. I am 19 years old. I would like to change the future and shape it for the benefit of the people by using my past experiences. My ultimate goal is to be a beneficial individual to society and to ensure that people are. I want to work with determination so that my engineering knowledge and skills will be useful to our society. The projects that I will take advantage of my creativity will always be directed towards a better world.</p>
+          <a href="#" download="./volkanalkancv (english).pdf">Download CV</a>
         </div>
-      </header>
+      </div>
+    </div>
+  </section>
 
-   <!-- End Header Section -->
-
-   <!-- About Section -->
-
-      <section class="about" id="about">
-        <div class="container">
-          <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
-            <img src="./images/Volkan Alkan.PNG" alt="">
-          </div>
-          <div class="about-details" data-aos="fade-left" data-aos-delay="600">
-            <div class="about-heading">
-              <h1>About</h1>
-              <h6>Myself</h6>
-            </div>
-            <p>
-              Hello there! I am a computer engineering student & Web developer. At the same time, music has always been my comrade, especially piano. I am 19 years old. I would like to change the future and shape it for the benefit of the people by using my past experiences. My ultimate goal is to be a beneficial individual to society and to ensure that people are. I want to work with determination so that my engineering knowledge and skills will be useful to our society. The projects that I will take advantage of my creativity will always be directed towards a better world. 
-            </p>
-            <div class="social-media">
-              <ul class="nav-list">
-                <li>
-                  <a href="https://www.instagram.com/volkanallkan/?hl=tr" class="icon-link" target="_blank">
-                    <i class="fab fa-instagram-square"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/volkanalkanofficial/" class="icon-link" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://medium.com/@volkanalkan_75756" class="icon-link" target="_blank">
-                    <i class="fab fa-medium-m"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/channel/UC-gFEqAxkZXkDLAmVl_ynqQ?view_as=subscriber" class="icon-link" target="_blank">
-                    <i class="fab fa-youtube-square"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
+  <!-- services section start -->
+  <section class="services" id="services">
+    <div class="max-width">
+      <h2 class="title">My services</h2>
+      <div class="serv-content">
+        
+        <div class="card" data-aos="fade" data-aos-delay="150">
+          <div class="box">
+            <i class="fas fa-paint-brush"></i>
+            <div class="text">Web Design</div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat perspiciatis modi dignissimos repudiandae sequi sed.</p>
           </div>
         </div>
-      </section>
 
-      <!-- End About Section -->
-
-      <!-- Services Section -->
-
-      <section class="services" id="services">
-        <div class="container">
-          <div class="section-heading">
-            <h1>Services</h1>
-            <h6>What I can do for you</h6>
-          </div>
-          <div class="my-skills">
-            <div class="skill" data-aos="fade-in" data-aos-delay="300">
-              <div class="icon-container">
-                <i class="fas fa-layer-group"></i>
-              </div>
-              <h1>Web Design</h1>
-              <p>
-                Web design in line with our creativity and engineering knowledge
-              </p>
-            </div>
-            <div class="skill" data-aos="fade-in" data-aos-delay="600">
-              <div class="icon-container">
-                <i class="fas fa-code"></i>
-              </div>
-              <h1>Web Development</h1>
-              <p>
-                Web development in line with our creativity and engineering knowledge
-              </p>
-            </div>
-            <div class="skill" data-aos="fade-in" data-aos-delay="900">
-              <div class="icon-container">
-                <i class="fas fa-mobile-alt"></i>
-              </div>
-              <h1>Responsive Design</h1>
-              <p>
-                All designs are fully responsive for all devices
-              </p>
-            </div>
-            <div class="skill" data-aos="fade-in" data-aos-delay="900">
-              <div class="icon-container">
-                <i class="fas fa-chart-bar"></i>
-              </div>
-              <h1>Product Strategy</h1>
-              <p>
-              Product strategy in line with our creativity and engineering knowledge
-              </p>
-            </div>
+        <div class="card" data-aos="fade" data-aos-delay="350">
+          <div class="box">
+            <i class="fas fa-chart-line"></i>
+            <div class="text">Advertising</div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat perspiciatis modi dignissimos repudiandae sequi sed.</p>
           </div>
         </div>
-      </section>
 
-      <!-- End Services Section -->
-
-      <!-- Portfolio Section -->
-
-      <section class="portfolio" id="portfolio">
-        <div class="container">
-          <div class="section-heading">
-            <h1>Videos</h1>
-            <h6>View some of my recent videos</h6>
-          </div>
-          <div class="portfolio-item">
-            <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
-              <iframe src="https://www.youtube.com/embed/cYSc-QIZd44" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
-              <h6>Piano Video</h6>
-              <h1>La Campanella - Liszt</h1>
-              <p>
-                This piece was normally composed for orchestra by Paganini. Liszt adapted it to piano, and it is among the most difficult great piano etudes ever.
-              </p>
-              <a href="https://www.youtube.com/watch?v=cYSc-QIZd44" class="cta" target="_blank">Go to Video</a>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="900">
-              <h6>Web Design</h6>
-              <h1>Product Layout</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <a href="https://www.youtube.com/watch?v=lR7zxHyIAl4" class="cta" target="_blank">Go to Video</a>
-            </div>
-            <div class="portfolio-img" data-aos="fade-left" data-aos-delay="1200">
-              <iframe src="https://www.youtube.com/embed/lR7zxHyIAl4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+        <div class="card" data-aos="fade" data-aos-delay="550">
+          <div class="box">
+            <i class="fas fa-code"></i>
+            <div class="text">Apps Design</div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat perspiciatis modi dignissimos repudiandae sequi sed.</p>
           </div>
         </div>
-      </section>
 
-      <!-- End Portfolio Section -->
+      </div>
+    </div>
+  </section>
 
-      <!-- Experience Section -->
-
-      <section class="experience" id="experience">
-        <div class="container">
-          <div class="section-heading">
-            <h1>Work Education</h1>
-            <h6>Past and current work education</h6>
-          </div>
-          <div class="timeline" data-aos="fade-down" data-aos-delay="300">
-            <ul>
-              <li class="date" data-date="2019 - Present">
-                <h1>Bahcesehir University - <span>Computer Engineering</span> </h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-              </li>
-              <li class="date" data-date="2015 - 2019">
-                <h1>Lycée Tevfik Fikret d'Izmir</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-              </li>
-              <li class="date" data-date="2007 - 2015">
-                <h1>Collège de Tevfik Fikret d'Izmir</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- End Experience Section -->
-
-      <!-- Contact Section -->
-
-      <section class="contact" id="contact">
-        <div class="container">
-          <div class="section-heading">
-            <h1>Contact</h1>
-            <h6>Get in touch</h6>
-          </div>
-          <form action="" data-aos="fade-up" data-aos-delay="300">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name..." required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email..." required>
-            <label for="service">Services:</label>
-            <select name="services" id="service">
-              <option value="">Web Design</option>
-              <option value="">Web Development</option>
-              <option value="">Web Design/Development</option>
-              <option value="">Other</option>
-            </select>
-            <label for="subject">Subject:</label>
-            <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
-            <input type="submit" value="Submit">
-          </form>
-        </div>
-      </section>
-
-      <!-- End Contact Section -->
-
-      <!-- Footert Section -->
-      <footer class="copyright">
-        <div class="up" id="up">
-          <i class="fas fa-chevron-up"></i>
-        </div>
-        <p>&copy; 2020 Volkan Alkan</p>
-      </footer>
-      <!-- End Footer Section -->
-
-      <!-- Script Tags -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- script tags -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="main.js"></script>
-      <!-- End Script Tags -->
-
-      <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ML5D45B"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      <!-- End Google Tag Manager (noscript) -->
-
+  <script src="app.js"></script>
 </body>
 </html>
