@@ -5,7 +5,9 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 .max-width{
   max-width: 1300px;
   padding: 0 80px;
@@ -48,7 +50,8 @@
 
 
 /* preloader */
-.loader_bg{
+
+/* .loader_bg{
   position: fixed;
   z-index: 9999999;
   background: #fff;
@@ -80,7 +83,7 @@
 
 .loader::before{
   animation-delay: .5s;
-}
+} */
 
 
 
@@ -283,6 +286,21 @@
 section{
   padding: 100px 0;
 }
+.about,
+.services,
+.skills,
+.blogs,
+footer{
+  font-family: 'Poppins',sans-serif;
+}
+.about .about-content,
+.services .serv-content,
+.skills .skills-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
 section .title{
   position: relative;
   text-align: center;
@@ -329,19 +347,8 @@ section .title::after{
 
 
 /* about section styling */
-.about,
-.services{
-  font-family: 'Poppins',sans-serif;
-}
 .about .title::after{
   content: "who i am";
-}
-.about .about-content,
-.services .serv-content{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
 }
 .about .about-content .left{
   width: 45%;
@@ -400,15 +407,17 @@ section .title::after{
 
 
 /* services section styling */
-.services{
+.services, .blogs{
   background: #111;
   color: #fff;
 
 }
-.services .title::before{
+.services .title::before,
+.blogs .title::before{
   background: #fff;
 }
-.services .title::after{
+.services .title::after,
+.blogs .title::after{
   content: "what i provide";
   background: #111;
 }
@@ -443,6 +452,237 @@ section .title::after{
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* skills section styling */
+.skills .title::after{
+  content: "what i know";
+}
+.skills .skills-content .column{
+  width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+  text-align: justify;
+}
+.skills .skills-content .left a{
+  display: inline-block;
+  background: #00A4EF;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid #00A4EF;
+  transition: all .3s ease;
+}
+.skills .skills-content .left a:hover{
+  color: #00A4EF;
+  background: none;
+
+}
+.skills .skills-content .right .bars{
+  margin-bottom: 15px;
+
+}
+.skills .skills-content .right .info{
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills .skills-content .right span{
+  font-weight: 500;
+  font-size: 18px;
+}
+.skills .skills-content .right .line{
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+.skills .skills-content .right .line::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #00A4EF;
+}
+.skills-content .right .html::before{
+  width: 95%;
+}
+.skills-content .right .css::before{
+  width: 75%;
+}
+.skills-content .right .js::before{
+  width: 40%;
+}
+.skills-content .right .bs::before{
+  width: 65%;
+}
+.skills-content .right .cpp::before{
+  width: 55%;
+}
+.skills-content .right .pyt::before{
+  width: 25%;
+}
+.skills-content .right .cs6::before{
+  width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* blogs section styling */
+.blogs .title::after{
+  content: "what did I write";
+}
+.blogs .carousel .card{
+  background: #222;
+  border-radius: 6px;
+  padding: 25px 35px;
+  text-align: center;
+  transition: all .3s ease;
+}
+.blogs .carousel .card:hover{
+  background: #00A4EF;
+}
+.blogs .carousel .card .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s ease;
+}
+.blogs .carousel .card a{
+  color: #00a3efb9;
+  font-weight: 500;
+  margin-top: 25px;
+  transition: color .3s ease;
+}
+.blogs .carousel .card p{
+  color: #c3cbcf;
+}
+.blogs .carousel .card:hover a{
+  color: #333;
+}
+.blogs .carousel .card:hover .box{
+  transform: scale(1.05);
+}
+.blogs .carousel .card .text{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+  /* height: 100px; */
+}
+.blogs .carousel .card img{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #00A4EF;
+  transition: all .3s ease;
+}
+.blogs .carousel .card:hover img{
+  border-color: #333;
+}
+.owl-dots{
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-dot{
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none!important;
+  border-radius: 50%;
+  border: 2px solid #00A4EF!important;
+  transition: all .3s ease;
+}
+.owl-dot.active{
+  width: 35px;
+  border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+  background: #00A4EF!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer section styling */
+footer{
+  background: #111;
+  padding: 20px 23px;
+  color: #fff;
+}
+footer span a{
+  color: #00A4EF;
+  text-decoration: none;
+}
+footer span a:hover{
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -576,6 +816,10 @@ section .title::after{
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
+  .skills .skills-content .column{
+    width: 100%;
+    margin-bottom: 35px;
+  }
 }
 
 @media (max-width: 690px){
@@ -615,5 +859,12 @@ section .title::after{
   }
   .menu-toggler{
     right: 30px;
+  }
+  .skills .title::after,
+  .services .title::after{
+    width: 135px;
+  }
+  .blogs .title::after{
+    width: 145px;
   }
 }
