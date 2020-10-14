@@ -1018,6 +1018,9 @@ footer span a:hover{
   .home .home-content .text-3{
     font-size: 27px
   }
+  .about .about-content .right span{
+    display: table-cell;
+  }
 }
 
 @media (max-width: 410px){
